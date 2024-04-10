@@ -119,6 +119,17 @@ common shared
     , temporary
     , hspec-expectations
 
+  other-modules:
+    Data_Storage.Database_AccessControl
+    Data_Storage.Database_Authentication
+    Data_Storage.Database_Connection
+    Data_Storage.Database_Contact
+    Data_Storage.Database_Document
+    Data_Storage.Database_Newsfeed
+    Data_Storage.Database_User
+    Data_Storage.DocumentManagement
+    Data_Storage.Model
+
   hs-source-dirs:     src
   default-language:   Haskell2010
 
