@@ -24,7 +24,6 @@ import Data_Storage.Model (
  )
 import Database.Persist (
     Entity (entityKey, entityVal),
-    Filter (FilterOr),
     PersistStoreWrite (delete, insert, update),
     selectList,
     (<-.),
