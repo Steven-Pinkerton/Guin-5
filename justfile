@@ -17,3 +17,7 @@ fmt:
 # Run ghcid -- auto-recompile and run `main` function
 run:
     ghcid -c "cabal repl exe:haskell-template" --warnings -T :main
+
+# Test -- Run all tests
+test:
+    ghcid -c "cabal repl test:tests" -T :main

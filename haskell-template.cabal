@@ -2,11 +2,10 @@ cabal-version:      2.4
 name:               haskell-template
 version:            0.1.0.0
 license:            MIT
-copyright:          2022 Sridhar Ratnakumar
-maintainer:         srid@srid.ca
-author:             Sridhar Ratnakumar
+copyright:          2022 Steven Pinkerton
+maintainer:         Steven Pinkerton
+author:             Steven Pinkerton
 category:           Web
-homepage:           https://srid.ca/haskell-template
 
 -- TODO: Before hackage release.
 -- A short (one-line) description of the package.
@@ -44,6 +43,7 @@ common shared
     DeriveLift
     DeriveTraversable
     DerivingStrategies
+    DuplicateRecordFields
     DerivingVia
     EmptyCase
     EmptyDataDecls
@@ -62,6 +62,7 @@ common shared
     NoStarIsType
     NumericUnderscores
     OverloadedStrings
+    PartialTypeSignatures
     PolyKinds
     PostfixOperators
     RankNTypes
@@ -72,22 +73,51 @@ common shared
     TypeApplications
     TypeFamilies
     TypeOperators
+    UndecidableInstances
     ViewPatterns
 
   build-depends:
     , aeson
     , async
     , base          >=4   && <5
+    , base64-bytestring
+    , bcrypt
+    , bytestring
+    , conduit
+    , conduit-extra
+    , containers
+    , cryptonite
     , data-default
     , directory
+    , exceptions             >=0.10.5
     , filepath
+    , http-conduit
+    , http-types
+    , jwt                    >=0.10.0
+    , memory
+    , monad-logger
     , mtl
     , optics-core
+    , persistent
+    , persistent-postgresql
     , profunctors
-    , relude        >=1.0
+    , random
+    , relude                 >=1.0
+    , resource-pool
+    , servant
+    , servant-server
+    , servant-multipart
+    , servant-auth-server
     , shower
+    , text
     , time
+    , warp
     , with-utf8
+    , yaml
+    , wai
+    , uuid
+    , temporary
+    , hspec-expectations
 
   hs-source-dirs:     src
   default-language:   Haskell2010
