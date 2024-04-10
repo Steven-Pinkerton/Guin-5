@@ -129,6 +129,10 @@ common shared
     Data_Storage.Database_User
     Data_Storage.DocumentManagement
     Data_Storage.Model
+    Server_Code.API
+    Server_Code.Handlers
+    Server_Code.Server
+    Server_Code.Types
 
   hs-source-dirs:     src
   default-language:   Haskell2010
