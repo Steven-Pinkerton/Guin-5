@@ -24,7 +24,7 @@ import Control.Monad.Logger
 import Data.Time
 import Data_Storage.Database_Newsfeed (deletePost, getVisiblePosts, insertPost, updatePost)
 import Data_Storage.Model (Contact, Post (Post, postContent), PostId, PrivacyLevel (PublicLimited, PublicUnlimited), User, UserId)
-import TestDatabaseCode (clearDatabase, createTestDatabasePool, setupDatabase)
+import TestDatabaseCode (createTestDatabasePool)
 import TestUtils (addTestContact, createTestUser)
 import Prelude hiding (get)
 

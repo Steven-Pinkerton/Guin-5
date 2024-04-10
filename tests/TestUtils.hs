@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+{-# HLINT ignore "Use toText" #-}
 module TestUtils where
 
 import Data.Pool (Pool)
